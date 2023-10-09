@@ -20,7 +20,7 @@ public class Question_7 {
         {
             for (int j = 0; j < arr[i].length; j++) 
             {
-                count[arr[i][j]]++;
+                count[arr[i][j]]++;	// 예, arr[i][j]이 3이면, count[3]을 증가
             }
         }
 
