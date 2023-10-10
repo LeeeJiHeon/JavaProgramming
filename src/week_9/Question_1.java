@@ -52,7 +52,7 @@ public class Question_1 {
 	public static void main(String[] args) {
 		// Person 객체 생성 및 값 출력
         Person person1 = new Person(1, "이지헌", "서울 은평구 응암동", "010-2407-5903", "남자", 25);
-        Person person2 = new Person(2, "홍길동", "경기도 수원시 영통구", "010-1234-5678", "남자", 30);
+        Person person2 = new Person(2, "홍길동", "강원도 삼척시 교동", "010-1234-5678", "남자", 30);
         Person person3 = new Person(3, "이슬이", "서울 강남구 신사동", "010-9876-5432", "여자", 40);
         
         System.out.println("=========[ 정보 ]========");
