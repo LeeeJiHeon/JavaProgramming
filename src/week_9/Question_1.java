@@ -20,6 +20,31 @@ class Person {
         this.gender = gender;
         this.age = age;
     }
+ // Getter 메서드들 (Setter 메서드도 필요하다면 추가 가능)
+    public int getNumber() {
+        return number;
+    }
+    
+    public String getName() {
+        return name;
+    }
+    
+    public String getAddress() {
+        return address;
+    }
+    
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+    
+    public String getGender() {
+        return gender;
+    }
+    
+    public int getAge() {
+        return age;
+    }
+
 }
 
 public class Question_1 {
