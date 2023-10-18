@@ -19,7 +19,7 @@ class Horse {
         this.speed = speed;
     }
 
-    // Getter와 Setter 메서드
+    // Getter와 Setter 메서드 (11번)
     public int getNumOfLeg() {
         return numOfLeg;
     }
