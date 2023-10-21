@@ -9,6 +9,7 @@ abstract class Animal {
 	public abstract void run();
 }
 
+//Horse 클래스 (Animal을 상속받음)
 public class Horse extends Animal  {
     private int numOfLeg;
     private int power;
