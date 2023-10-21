@@ -1,6 +1,15 @@
 package week_10;
 
-public class Horse {
+//추상 클래스 Animal
+abstract class Animal {
+	protected String color;
+	protected int speed;
+
+	// 추상 메서드 run()
+	public abstract void run();
+}
+
+public class Horse extends Animal  {
     private int numOfLeg;
     private int power;
     private String color;
@@ -17,6 +26,11 @@ public class Horse {
         this.power = power;
         this.color = color;
         this.speed = speed;
+    }
+    
+    @Override
+    public void run() {
+        System.out.println("Horse is running!");
     }
 
     // numOfLeg의 Setter와 Getter 메서드
@@ -54,4 +68,6 @@ public class Horse {
     public int getSpeed() {
         return speed;
     }
+    
 }
+
