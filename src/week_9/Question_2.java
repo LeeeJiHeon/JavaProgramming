@@ -9,22 +9,18 @@ public class Question_2 {
         Person[] people = new Person[3]; 
 
         // 객체 배열에 각각의 객체 할당
-        people[0] = new Person(1, "이지헌", "서울 은평구 응암동", "010-2407-5903", "남자", 25);
-        people[1] = new Person(2, "홍길동", "강원도 삼척시 교동", "010-1234-5678", "남자", 30);
-        people[2] = new Person(3, "이슬이", "서울 강남구 신사동", "010-9876-5432", "여자", 40);
+        people[0] = new Person(1, "Lee Jiheon", "서울 은평구", "010-2407-5903", '남');
+        people[1] = new Person(2, "Kim Chulsoo", "강원도 삼척시", "010-1234-5678", '남');
+        people[2] = new Person(3, "Lee sara", "경기도 구리시", "010-9876-5432", '여');
         
         // 객체 배열 안에 있는 객체 값을 출력
-        System.out.println("=========[ 정보 ]========");
+        System.out.println("===========[ 목록 ]==========");
         for (int i = 0; i < people.length; i++)
         {
-            System.out.println("번호 : " + people[i].getNumber());
-            System.out.println("이름 : " + people[i].getName());
-            System.out.println("주소 : " + people[i].getAddress());
-            System.out.println("전화번호 : " + people[i].getPhoneNumber());
-            System.out.println("성별 : " + people[i].getGender());
-            System.out.println("나이 : " + people[i].getAge() + "\n=======================");
+            System.out.println(people[i].toString());
         }
 
 	}
 
+	
 }
