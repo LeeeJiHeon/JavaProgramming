@@ -10,7 +10,7 @@ public class Zebra extends Horse {
     }
 
     // 파라미터를 통해 속성을 초기화하는 생성자
-    public Zebra(int numOfLeg, int power, String color, int speed, int numOfStripe) {
+    public Zebra(int numOfLeg, int power, int color, int speed, int numOfStripe) {
         super(numOfLeg, power, color, speed); // 상위 클래스의 생성자 호출
         this.numOfStripe = numOfStripe;
     }
@@ -22,5 +22,18 @@ public class Zebra extends Horse {
 
     public int getNumOfStripe() {
         return numOfStripe;
+    }
+    
+    public String toString() {
+        return "=====[Zebra]=====" +
+               "\nnumOfLeg = " + getNumOfLeg() +
+               "\npower = " + getPower() +
+               "\ncolor = " + getColor() + 
+               "\nspeed = " + getSpeed() +
+               "\nnumOfStripe = " + numOfStripe;
+    }
+    
+    public void run() {
+        System.out.println(toString());
     }
 }
